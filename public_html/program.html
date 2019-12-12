@@ -1,0 +1,20 @@
+<%inherit file="base.mako"/>
+<%block name="title">Program and Events</%block>
+<%block name="content" filter="typogrify">
+    <header>
+        <h1>BCAS Program and Events</h1>
+    </header>
+    <section id="events">
+        <p>For more events, see the <a href="https://www.google.com/calendar/embed?src=bc3nqdvipkubbn09u2j09o85c4%40group.calendar.google.com&ctz=America/Los_Angeles" title="BCAS Events Calendar">full BCAS calendar</a> <a href="https://www.google.com/calendar/feeds/bc3nqdvipkubbn09u2j09o85c4%40group.calendar.google.com/public/basic" target="_blank" onclick="LBa(this,0,true,false,false); return false;"><img src="https://www.google.com/calendar/images/xml.gif"></a>&nbsp;<a href="https://www.google.com/calendar/ical/bc3nqdvipkubbn09u2j09o85c4%40group.calendar.google.com/public/basic.ics" target="_blank" onclick="LBa(this,1,true,false,false); return false;"><img src="https://www.google.com/calendar/images/ical.gif"></a>&nbsp;<a href="https://www.google.com/calendar/embed?src=bc3nqdvipkubbn09u2j09o85c4%40group.calendar.google.com&amp;ctz=America/Los_Angeles" target="_blank" onclick="LBa(this,2,true,false); return false;"><img src="https://www.google.com/calendar/images/html.gif"></a>.  See also the calendar of events hosted at the <a href="http://hcbss.stanford.edu/" title="Ho Center for Buddhist Studies">Ho Center for Buddhist Studies</a>.</p>
+        <section id="regular-events"></section>
+        <section id="upcoming-events"></section>
+    </section>
+</%block>
+
+<%block name="extra_body">
+<%block decorator="js">
+<script type="text/javascript" src="${base_url}/js/date_formatting.js"></script>
+<script type="text/javascript" src="${base_url}/js/bcas_calendar.js"></script>
+</%block>
+<script src="https://apis.google.com/js/client.js?onload=clientLoaded"></script>
+</%block>
