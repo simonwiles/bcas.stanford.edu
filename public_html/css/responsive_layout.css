@@ -2,7 +2,7 @@
 
 .wrapper {
     width: 90%;
-    margin: 1% 5%;
+    margin: 0 5%;
 }
 
 .main {
@@ -58,18 +58,6 @@
 
 @media only screen and (min-width: 480px) {
 
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
-
-    nav a {
-        float: left;
-        width: 15%;
-        margin: 0 .5%;
-        padding: 5px 0;
-        margin-bottom: 0;
-    }
-
 /* ========================
     INTERMEDIATE: IE Fixes
    ======================== */
@@ -83,41 +71,21 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
-
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-
-    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }
-
-/* ============
-    WIDE: Menu
-   ============ */
+@media only screen and (min-width: 800px) {
 
     .title {
         float: left;
     }
-
-    nav {
-        clear: both;
-        width: 100%;
-    }
-
-/* ============
-    WIDE: Main
-   ============ */
 
     .main aside {
         margin: 0 auto;
         width: 390px;
         background: #b22 url(../img/borobudur_buddha_390x259.jpg) no-repeat;
         padding-top:259px;
+    }
+
+    nav div.wrapper {
+        flex-direction: row;
     }
 }
 
@@ -126,8 +94,6 @@
 /* ===============
     Maximal Width
    =============== */
-
-
 
     .main article {
         float: left;

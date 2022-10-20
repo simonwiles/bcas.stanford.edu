@@ -22,14 +22,17 @@ a:hover { color: #b22; text-decoration: underline; }
 
 nav { background: #8c1515; }
 
-nav ul {
-    margin: 0;
-    padding: 0;
+nav div.wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 nav a {
-    display: block;
+    padding: 5px 0;
     text-align: center;
+    width: 100%;
 }
 
 nav a,
@@ -62,6 +65,13 @@ div.main-container {
 .header-container,
 .footer-container {
     background: #b22;
+}
+
+.header-container,
+.main aside {
+    -webkit-box-shadow: 0 5px 10px #aaa;
+        -moz-box-shadow: 0 5px 10px #aaa;
+            box-shadow: 0 5px 10px #aaa;
 }
 
 .title {

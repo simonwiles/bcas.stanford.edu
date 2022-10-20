@@ -17,8 +17,8 @@
     <%block decorator="css">
     <link rel="stylesheet" href="${base_url}/css/normalize.css">
     <link rel="stylesheet" href="${base_url}/css/html5bp_boilerplate.css">
-    <link rel="stylesheet" href="${base_url}/css/responsive_layout.css">
     <link rel="stylesheet" href="${base_url}/css/theming.css">
+    <link rel="stylesheet" href="${base_url}/css/responsive_layout.css">
     <link rel="stylesheet" href="${base_url}/css/contact_form.css">
     <link rel="stylesheet" href="${base_url}/css/html5bp_print_styles.css">
     </%block>
@@ -41,15 +41,15 @@
           The Buddhist Community At Stanford
         </h1>
       </header>
-      <nav class="clearfix">
-        <ul class="wrapper">
-          <li><a href="${base_url}/"${' class="current"' if path == base_url + '/index.html' else '' | n}>Home</a></li>
-          <li><a href="${base_url}/activities.html"${' class="current"' if path == base_url + '/activities.html' else '' | n}>Activities</a></li>
-          <li><a href="${base_url}/program.html"${' class="current"' if path == base_url + '/program.html' else '' | n}>Program</a></li>
-          <li><a href="${base_url}/resources.html"${' class="current"' if path == base_url + '/resources.html' else '' | n}>Resources</a></li>
-          <li><a href="${base_url}/contact.html"${' class="current"' if path == base_url + '/contact.html' else '' | n}>Contact</a></li>
-          <li><a href="${base_url}/get_involved.html"${' class="current"' if path == base_url + '/get_involved.html' else '' | n}>Get Involved!</a></li>
-        </ul>
+      <nav>
+        <div class="wrapper">
+          <a href="${base_url}/"${' class="current"' if path == base_url + '/index.html' else '' | n}>Home</a>
+          <a href="${base_url}/activities.html"${' class="current"' if path == base_url + '/activities.html' else '' | n}>Activities</a>
+          <a href="${base_url}/program.html"${' class="current"' if path == base_url + '/program.html' else '' | n}>Program</a>
+          <a href="${base_url}/resources.html"${' class="current"' if path == base_url + '/resources.html' else '' | n}>Resources</a>
+          <a href="${base_url}/contact.html"${' class="current"' if path == base_url + '/contact.html' else '' | n}>Contact</a>
+          <a href="${base_url}/get_involved.html"${' class="current"' if path == base_url + '/get_involved.html' else '' | n}>Get Involved!</a>
+        </div>
       </nav>
     </div>
 
