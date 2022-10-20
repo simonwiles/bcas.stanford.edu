@@ -43,12 +43,12 @@
       </header>
       <nav class="clearfix">
         <ul class="wrapper">
-          <li><a href="${base_url}/"${' class="current"' if path == 'index.html' else '' | n}>Home</a></li>
-          <li><a href="${base_url}/activities.html"${' class="current"' if path == 'activities.html' else '' | n}>Activities</a></li>
-          <li><a href="${base_url}/program.html"${' class="current"' if path == 'program.html' else '' | n}>Program</a></li>
-          <li><a href="${base_url}/resources.html"${' class="current"' if path == 'resources.html' else '' | n}>Resources</a></li>
-          <li><a href="${base_url}/contact.html"${' class="current"' if path == 'contact.html' else '' | n}>Contact</a></li>
-          <li><a href="${base_url}/get_involved.html"${' class="current"' if path == 'get_involved.html' else '' | n}>Get Involved!</a></li>
+          <li><a href="${base_url}/"${' class="current"' if path == base_url + '/index.html' else '' | n}>Home</a></li>
+          <li><a href="${base_url}/activities.html"${' class="current"' if path == base_url + '/activities.html' else '' | n}>Activities</a></li>
+          <li><a href="${base_url}/program.html"${' class="current"' if path == base_url + '/program.html' else '' | n}>Program</a></li>
+          <li><a href="${base_url}/resources.html"${' class="current"' if path == base_url + '/resources.html' else '' | n}>Resources</a></li>
+          <li><a href="${base_url}/contact.html"${' class="current"' if path == base_url + '/contact.html' else '' | n}>Contact</a></li>
+          <li><a href="${base_url}/get_involved.html"${' class="current"' if path == base_url + '/get_involved.html' else '' | n}>Get Involved!</a></li>
         </ul>
       </nav>
     </div>
