@@ -12,7 +12,8 @@
           data-generated-at="<%! import datetime %>${datetime.datetime.now().date().isoformat()}">
     <meta name="viewport" content="width=device-width">
 
-    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css?family=Oxygen:400,700&amp;subset=latin,latin-ext&display=swap">
 
     <%block decorator="css">
     <link rel="stylesheet" href="${base_url}/css/normalize.css">
@@ -37,7 +38,7 @@
     <div class="header-container">
       <header class="wrapper clearfix">
         <h1 class="title">
-          <img alt="dharmacakra" src="${base_url}/img/dharmacakra_simple_white.svg" onerror="this.onerror=null; this.src='${base_url}/img/dharmacakra_simple_white_45x45.png'"/>
+          <img alt="dharmacakra" height="45px" width="45px" src="${base_url}/img/dharmacakra_simple_white.svg" onerror="this.onerror=null; this.src='${base_url}/img/dharmacakra_simple_white_45x45.png'"/>
           The Buddhist Community At Stanford
         </h1>
       </header>
