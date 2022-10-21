@@ -2,17 +2,17 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
     <title>BCAS: <%block name="title">The Buddhist Community At Stanford</%block></title>
-    <meta name="description" content="">
+    <meta name="description" content="Web pages for BCAS, the Buddhist Community At Stanford.">
     <meta name="generator"
           content="PyDecanter, a static website generater by Simon Wiles"
           data-generated-at="<%! import datetime %>${datetime.datetime.now().date().isoformat()}">
     <meta name="viewport" content="width=device-width">
 
-    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
     <%block decorator="css">
     <link rel="stylesheet" href="${base_url}/css/normalize.css">
